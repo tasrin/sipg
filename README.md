@@ -1,18 +1,12 @@
-Aplikasi Sistem Informasi Pendataan dan Gaji Karyawan Menggunakan Framework Laravel 7.*
+Muhammad Fakhri Firjatullah Ramadhan (01) :
+No.Telp: 085799830623
 
-Created By : [Tasrin Adiputra](https://www.facebook.com/tasrinteknik)
+Philipus Bagaskara Diandra Wijaya (22) :
+No.Telp : 081393054237
 
-Untuk menjalankan Aplikasi ini silahkan jalankan perintah berikut pada command promt / CMD / Git CMD anda
+Ranzyah Adinata Aldo Ala Alfreda (30) :
+No.Telp : 081548942238
 
-##Usage
-
-- Run `git clean  -d  -fx .`
-- Run `composer install`
-- Run `copy .env.example .env`
-- Run `php artisan key:generate`
-- Create database for this app and onfig the ` .env ` file
-- Run `php artisan migrate`
-- Run `php artisan db:seed`
-- Run `php artisan storage:links`
-- Run `php artisan serve`
-- Done. :)
+Revalsa Putra Lusyandra (34) :
+No.Wa 081578024326
+No.Telp 085640075728
