@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Salary;
 use App\Models\Schedule;
+use App\Models\Users;
 use App\Models\Master\Staff;
 use DB;
 
@@ -14,7 +15,8 @@ class HomeController extends Controller
     {
         $data['salary'] = Salary::count();   
         $data['schedule'] = Schedule::count();   
-        $data['staff'] = Staff::count();   
+        $data['staff'] = Staff::count();
+        $data['users'] = Users::count();      
         return view('home', $data);
     }
 

@@ -16,8 +16,5 @@
 </nav>
 
 <footer class="main-footer d-none d-md-block">
-    <div class="float-right">
-    Build With : <a href="#" data-toggle="tooltip" title="Lihat Situs" target="_blank">Apurva</a>
-    </div>
-    <strong>Copyright &copy; {{ date('Y') }} <a href="#" data-toggle="tooltip" title="Lihat Situs" target="_blank">Apurva</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; {{ date('Y') }} <a href="#" data-toggle="tooltip" title="Lihat Situs" target="_blank">Telsip</a>.</strong> All rights reserved.
 </footer>

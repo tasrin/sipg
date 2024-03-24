@@ -1,15 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 @section('content')
 <div class="container">
+    <div class="login-box">
+    </div>
     <div class="row justify-content-center">
-        <div class="col-md-12 text-center mb-4 mt-4">
-            {{ config('app.name', 'SIPG') }} - Sistem Infromasi Pendataan dan Gaji Karyawan
-            <br>
-            <span style="font-weight: bold">( Apurva - APPS )</span>
-        </div>
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header bg-light text-center">Login  Sistem</div>
+                <div class="card-header bg-light text-center"><img src="{{ asset('assets/logo-telsip.png') }}" alt="Logo" style="max-width: 150px; max-height: 150px;"></div>
                 @if (session('message'))
                 <div class="col-md-12 mt-3">
                     <div class="alert alert-danger alert-dismissable mb-0"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -58,7 +55,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-7 offset-md-3">
-                                <button type="submit" class="btn btn-danger btn-block">
+                                <button type="submit" class="btn btn-primary btn-block">
                                     <i class="fa fa-unlock"></i> {{ __('Login') }}
                                 </button>
                                 {{-- <div class="col-md-12 text-center mt-3">
@@ -76,10 +73,6 @@
                 </div>
                 
                 <div id="loading"></div>
-
-                <div class="card-footer text-center text-secondary">
-                    Powered by <a href="#" class="font-weight-bold text-secondary" target="_blank">Apurva</a>.
-                </div>
             </div>
         </div>
     </div>

@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'SIPG') }} - Sistem Informasi Pendataan dan Penggajian Karyawan</title>
+    <title>Telsip</title>
     <link rel="icon" href="{{ asset('img/logo.jpeg') }}">
+    {{-- UI SOFT --}}
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('img/apple-icon.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('img/telsip/telsip.png')}}">
+    <link href="{{asset('css/nucleo-icons.css')}}../assets/" rel="stylesheet" />
+    <link href="{{asset('css/nucleo-svg.css')}}" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="{{asset('css/nucleo-svg.css')}}" rel="stylesheet" />
+    <link id="pagestyle" href="{{asset('css/soft-ui-dashboard.css?v=1.0.7')}}" rel="stylesheet" />
+    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
     @yield('styles')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.0.0-alpha/dist/css/adminlte.min.css">
@@ -18,6 +28,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link id="pagestyle" href="{{asset('css/soft-ui-dashboard.css?v=1.0.7')}}" rel="stylesheet" />
+    <link href="{{asset('css/nucleo-icons.css')}}" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
+
+    {{-- UI SOFT --}}
+    
 </head>
 <body class="hold-transition @guest login-page login-bg @else skin-blue sidebar-mini @endguest">
     <div id="load">Loading..</div>
@@ -54,6 +70,21 @@
          $('#link').click(function(){
             window.location = $(this).data('href');
             return false;
+        });
+    </script>
+    <script>
+        // INSERT JS HERE
+        // SOCIAL PANEL JS
+        const floating_btn = document.querySelector('.floating-btn');
+        const close_btn = document.querySelector('.close-btn');
+        const social_panel_container = document.querySelector('.social-panel-container');
+
+        floating_btn.addEventListener('click', () => {
+            social_panel_container.classList.toggle('visible')
+        });
+
+        close_btn.addEventListener('click', () => {
+            social_panel_container.classList.remove('visible')
         });
     </script>
 </body>

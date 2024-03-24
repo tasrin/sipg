@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 @section('styles')
 @endsection
@@ -73,9 +74,9 @@
                         </div>
                         <div class="card-body p-0 table-responsive">
                             <table border="0" class="table table-hover nowrap" id="url-custom">
-                                <tr data-href="javascript:void(0)" class="bg-info ganti-foto" title="Klik Untuk Mengganti Foto" data-toggle="tooltip" data-placement="bottom">
+                                {{-- <tr data-href="javascript:void(0)" class="bg-info ganti-foto" title="Klik Untuk Mengganti Foto" data-toggle="tooltip" data-placement="bottom">
                                     <td><i class="fas fa-upload mr-2"></i> Ganti Foto</td>
-                                </tr>
+                                </tr> --}}
                                 <tr data-href="{{ route('profile.edit', Auth::user()->staff->id) }}" title="Perbarui profil anda." data-toggle="tooltip" data-placement="bottom">
                                     <td><i class="fa fa-pencil mr-2 text-warning"></i> Edit Profile</td>
                                 </tr>

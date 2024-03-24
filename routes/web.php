@@ -75,6 +75,7 @@ Route::middleware('auth')->group(function(){
         Route::get('salary', 'SalaryController@index')->name('salary.index');
         Route::get('salary/detail/id={id}', 'SalaryController@show')->name('salary.show');
         Route::get('overtime', 'OvertimeController@index')->name('overtime.index');
+        
 
         Route::middleware('role:admin|accounting')->group(function(){
             Route::get('salary/create', 'SalaryController@create')->name('salary.create');
@@ -85,6 +86,8 @@ Route::middleware('auth')->group(function(){
             Route::patch('salary/{salary}/update', 'SalaryController@update')->name('salary.update');
             Route::get('staff/get_salary', 'SalaryController@getSalary');
             Route::get('salary/export/excel/id={id}/filter={filter}', 'SalaryController@excel')->name('salary.export.excel');
+            Route::get('salary/{id}', 'SalaryController@destroy')->name('salary.destroy');
+
         
             Route::get('overtime/create', 'OvertimeController@create')->name('overtime.create');
             Route::post('overtime', 'OvertimeController@store')->name('overtime.store');
